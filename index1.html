@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <script src="main.js"></script>
+    <div id="calculator-container">
+        <h1>Calculadora</h1>
+        <div id="calculator">
+            <input type="text" id="display" readonly> 
+            <div class="btn-row">
+                <input type="button" class="btn" value="7" onclick="addToDisplay('7')">
+                <input type="button" class="btn" value="8" onclick="addToDisplay('8')">
+                <input type="button" class="btn" value="9" onclick="addToDisplay('9')">
+            </div>
+            <div class="btn-row">
+                <input type="button" class="btn" value="4" onclick="addToDisplay('4')">
+                <input type="button" class="btn" value="5" onclick="addToDisplay('5')">
+                <input type="button" class="btn" value="6" onclick="addToDisplay('6')">
+            </div>
+            <div class="btn-row">
+                <input type="button" class="btn" value="1" onclick="addToDisplay('1')">
+                <input type="button" class="btn" value="2" onclick="addToDisplay('2')">
+                <input type="button" class="btn" value="3" onclick="addToDisplay('3')">
+            </div>
+            <div class="btn-row">
+                <input type="button" class="btn" value="0" onclick="addToDisplay('0')">
+                <input type="button" class="btn" value="." onclick="addToDisplay('.')">
+            </div>
+            <div class="btn-row">
+                <input type="button" class="btn" value="+" onclick="addToDisplay('+')">
+                <input type="button" class="btn" value="-" onclick="addToDisplay('-')">
+                <input type="button" class="btn" value="*" onclick="addToDisplay('*')">
+                <input type="button" class="btn" value="/" onclick="addToDisplay('/')">
+            </div>
+            <div class="btn-row">
+                <input type="button" class="btn equal" value="=" onclick="calcular()">
+                <input type="button" class="btn clear" value="C" onclick="clearDisplay()">
+            </div>
+        </div>
+    </div>
+    
+</html>
